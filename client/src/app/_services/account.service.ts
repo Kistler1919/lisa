@@ -35,7 +35,7 @@ export class AccountService {
   // tslint:disable-next-line: typedef
   logout() {
     localStorage.removeItem('user');
-    this.currentUserSource.next(null);
+    this.currentUserSource.next();
   }
 
   // tslint:disable-next-line: typedef
